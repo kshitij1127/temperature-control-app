@@ -8,6 +8,7 @@ const App = () => {
     if(temperatureValue === 50) return
 
     const newTemperature = temperatureValue + 1;
+    console.log(temperatureValue);
 
     if (newTemperature >= 40) {
       setTemperatureColor("high");
@@ -22,8 +23,10 @@ const App = () => {
   const decreaseTemperature = () => {
 
     if(temperatureValue === 0) return
+    console.log(temperatureValue);
 
     const newTemp = temperatureValue - 1;
+    console.log(newTemp);
 
     if (newTemp < 15) {
       setTemperatureColor("cold");
